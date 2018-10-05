@@ -1,0 +1,321 @@
+<html>
+<head>
+<link href="style2.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+td{
+text-align:center;
+border:10px solid #FED9A9;
+}
+body{
+background-color:#FED9A9;
+background-attachment:fixed;
+background-position:cover;
+
+}
+
+h2{
+text-align:center;
+background-image: linear-gradient(to right, rgba(224, 255, 255, 0.5) , rgba(0, 0, 235, 0));
+font-family:Comic Sans, Comic Sans MS, cursive;
+}
+
+
+table{
+background-color:rgb(57%, 77%, 22%);
+border:10px solid #FED9A9;
+}
+
+label{
+font-family:Comic Sans, Comic Sans MS, cursive;
+font-size:20px;
+}
+ul{
+list-style:none;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+	margin-left:25%;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+#frow{
+
+}
+#srow{
+
+}
+#trow{
+
+}
+.hidden{
+display:none;
+}
+.tan
+{
+background-image:url('items/weeldone.png');
+height:100%;
+width:100%;
+}
+.an
+{
+background-image:url('items/corr.png');
+height:100%;
+width:100%;
+}
+.button {
+    position: relative;
+    background-color: #f4511e;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+
+}
+</style>
+  
+  </head>
+<body>
+
+
+<div class="tabish">
+<h2>VOCABULARY</h2>
+<h2>Instruction</h2>
+<center>
+ <div class="table-responsive">
+
+    <table class="table" style="background-color:rgb(57%, 77%, 22%);  margin-top:10px; width:90%; height:80px;">
+	<tr id="frow">
+	<td ><img height="100px" src="items/cake.png"><br>
+	
+	<label class="container">Needle
+  <input type="radio" id="cak" value="needle"name="adio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Cake
+  <input type="radio" value="cake" id="cake"name="adio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Carrot
+  <input type="radio"id="cak"value="carrot" name="adio">
+  <span class="checkmark"></span>
+</label>
+</td>
+	<td><img height="100px"src="items/king.png"><br><label class="container"style="margin-left:1%;">King
+  <input type="radio" value="king"id="king"name="rao">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;">Doll
+  <input type="radio" id="kin" value="doll"name="rao">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;">Soap
+  <input type="radio" id="kin" value="soap"name="rao">
+  <span class="checkmark"></span>
+</label></td>
+	<td><img height="100px"src="items/vase.png"><br><label style="margin-left:1%;" class="container">Dog
+  <input type="radio" id="vas" value="dog" name="rdio">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;">Car
+  <input type="radio" id="vas" name="rdio" value="car">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;" >Vase
+  <input type="radio" id="vase" value="Vase"name="rdio">
+  <span class="checkmark"></span>
+</label></td>
+	</tr>
+	<tr id="srow">
+	<td><img height="100px" src="items/sand.png"><br><label style="margin-left:1%;" class="container">Ant
+  <input type="radio" id="san" value="ant"name="radi">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;" >Sandwich
+  <input type="radio" id="sand" value="sandwich"name="radi">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;" >Bear
+  <input type="radio" id="san"value="bear" name="radi">
+  <span class="checkmark"></span>
+</label></td>
+	<td><img height="100px"src="items/doll.png"><br><label style="margin-left:1%;" class="container">Queen
+  <input type="radio" id="dol"value="queen" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container"style="margin-left:1%;">Car
+  <input type="radio" id="dol"value="car" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="margin-left:1%;">Doll
+  <input type="radio" id="doll" value="doll" name="radio">
+  <span class="checkmark"></span>
+</label></td>
+	<td><img height="100px" src="items/basket.png"><br><label style="margin-left:1%;"class="container">Elephant
+  <input type="radio" id="baske" value="elephant" name="rado">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="margin-left:1%;">Basket
+  <input type="radio" id="basket" value="basket" name="rado">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="margin-left:1%;">Ambulance
+  <input type="radio" id="baske" value="ambulance" name="rado">
+  <span class="checkmark"></span>
+</label></td>
+	</tr>
+	<tr id="trow">
+	<td><input type="button" class="button" value="Reset"  onclick="ho()"></button></td>
+	<td><button class="button" onclick="go()" ><span>Submit </span></button></td>
+	<td><button class="button" onclick="show()"><span>Answer Key </span></button></td>
+	</tr>
+	</table>
+	</div>
+	
+	
+	
+	
+</center>
+</div>
+<div class="tan hidden">
+	</div>
+<div class="an hidden">
+
+<a style="font-size:25px; color:red; font-family:Comic Sans, Comic Sans MS, cursive;" href="index.html">Go Back</a>
+
+	</div>	
+<audio id="audio2" src="try-again.mp3"></audio>
+<audio id="audio1" src="well-done.mp3"></audio>
+
+<script>
+function go() {
+if(document.getElementById('cake').checked &&  document.getElementById('king').checked && document.getElementById('vase').checked && document.getElementById('sand').checked && document.getElementById('doll').checked && document.getElementById('basket').checked ){
+ var ans1 = document.querySelector('input[name="adio"]:checked').value;
+ var ans2 = document.querySelector('input[name="rao"]:checked').value;
+ var ans3 = document.querySelector('input[name="rdio"]:checked').value;
+ var ans4 = document.querySelector('input[name="radi"]:checked').value;
+ var ans5 = document.querySelector('input[name="radio"]:checked').value;
+ var ans6 = document.querySelector('input[name="rado"]:checked').value;
+
+if(ans1=="cake" && ans2=="king" && ans3=="Vase" && ans4=="sandwich" && ans5=="doll" && ans6=="basket"){
+var audio = document.getElementById("audio1");
+       audio.play();
+	   $('.tabish').addClass('hidden')
+	   $('.tan').removeClass('hidden')
+
+}
+else{
+alert('sorry not done!');
+}
+
+}
+else{
+
+var audio = document.getElementById("audio2");
+       audio.play();
+}
+
+}
+
+
+function show() {
+ $('.tabish').addClass('hidden')
+	   $('.an').removeClass('hidden')
+
+}
+function ho() {
+ 
+window.location="index.html"
+}
+</script>
+
+</body>
+</html>
